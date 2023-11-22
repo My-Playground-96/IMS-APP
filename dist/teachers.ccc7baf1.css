@@ -1,0 +1,87 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+main {
+  display: flex;
+}
+
+.form-container {
+  flex-basis: 40%;
+  padding: 10px 20px;
+  display: grid;
+}
+
+.table-container {
+  flex-basis: 60%;
+  padding: 10px 20px;
+  display: grid;
+}
+
+.table-container td:first-child, td:last-child {
+  text-align: center;
+}
+
+.table-container i[title="Edit"]:hover {
+  color: #eca31c;
+  cursor: pointer;
+}
+
+.table-container [title="Delete"]:hover {
+  color: #e82b09;
+  cursor: pointer;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  margin-top: .25rem;
+  font-size: .875rem;
+  display: none;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.txt-search {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  outline: none;
+  width: 80%;
+  height: 35px;
+  margin: 20px;
+  padding-left: 10px;
+}
+
+.txt-search.active {
+  outline: 1px soild blue;
+  box-shadow: inset -1px 1px 3px #0000001a;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: auto;
+  padding: 10px;
+}
+
+@media (width <= 992px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+@media (992px <= width <= 1092px) {
+  .form-container {
+    flex-basis: 45%;
+  }
+
+  .table-container {
+    flex-basis: 55%;
+  }
+}
+
+/*# sourceMappingURL=teachers.ccc7baf1.css.map */
