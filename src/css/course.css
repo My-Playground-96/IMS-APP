@@ -1,0 +1,72 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+main {
+    display: flex;
+}
+.form-container {
+    /* background-color: aquamarine; */
+    display: grid;
+    padding: 10px 20px;
+    flex-basis: 40%;
+}
+.table-container {
+    display: grid;
+    padding: 10px 20px;
+    flex-basis: 60%;
+}
+
+.table-container td:first-child, td:last-child {
+    text-align: center;
+}
+.table-container i[title="Edit"]:hover {
+    color: rgb(236, 163, 28);
+    cursor: pointer;
+}
+.table-container [title="Delete"]:hover {
+    color: rgb(232, 43, 9);
+    cursor: pointer;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875rem;
+    display: none;
+    margin-top: 0.25rem;
+}
+.is-invalid {
+    border-color: #dc3545;
+}
+.txt-search {
+    width: 80%;
+    margin: 20px;
+    border-radius: 5px;
+    height: 35px;
+    padding-left: 10px;
+    outline: none;
+    border: solid 1px lightgrey;
+
+}
+.txt-search.active {
+    box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+    outline: 1px soild blue;
+
+}
+
+/*Media Queries*/
+@media all and (max-width:992px) {
+    main {
+        flex-direction: column;
+    }
+}
+@media all and (992px <= width <= 1092px) {
+    .form-container {
+        flex-basis: 45%;
+    }
+    .table-container {
+        flex-basis: 55%;
+    }
+}
