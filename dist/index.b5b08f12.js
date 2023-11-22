@@ -290,4 +290,4 @@ form.addEventListener("keydown", async (e)=>{
     }
 });
 
-//# sourceMappingURL=index.b5b08f12.js.map
+//# sourceMappingURL=teachers.b5b08f12.js.map

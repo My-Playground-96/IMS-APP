@@ -2,11 +2,7 @@
   "name": "front-end",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
-  "source": ["src/index.html","src/temp.html"],
-=======
   "source": ["src/index.html"],
->>>>>>> 480ca779728213f7581071ba66062cdfc2dcd8aa
   "scripts": {
     "start": "parcel --no-cache",
     "build": "rm -rf dist parcel build"
