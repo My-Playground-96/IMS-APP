@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <link rel="stylesheet" href="/index.0d5f8989.css">
+    <script src="/index.34ce65bc.js" defer=""></script>
+    <link rel="stylesheet" href="/index.f004ef08.css">
+    <link rel="stylesheet" href="/course.8aa20512.css">
+    <script src="/index.79358b14.js" defer=""></script>
+</head>
+<body>
+    <header class="border-bottom">
+        <div class="logo-container">
+            <h1 class="p-0">
+                <i class="bi bi-bag-check text-primary pe-2"></i>
+                Course Registation
+        </h1></div>
+    </header>
+    <main>
+        <form action="#" method="POST" id="regForm" class="form-container">
+            <div class="d-flex justify-content-between mb-2 align-items-center">
+                <h2>Course Details</h2>
+                <button type="button" class="btn btn-primary btn-new-user">+ New Course</button>
+            </div>
+            <div class="mb-3 input-control">
+                <label for="txt-id" class="form-label">ID :</label>
+                <input type="text" class="form-control id-input" id="txt-id" placeholder="eg: 10" name="id">
+            </div>
+            <div class="mb-3 input-control">
+                <label for="txt-name" class="form-label">NAME :</label>
+                <input type="text" class="form-control name-input" id="txt-name" required="" placeholder="eg: DEP-11" name="name">
+                <div class="invalid-feedback" id="txt-name-error"></div>
+            </div>
+            <div class="mb-3 input-control">
+                <label for="txt-address" class="form-label">PERIOD(in months) :</label>
+                <input type="text" class="form-control address-input" id="txt-address" required="" placeholder="eg: 30 " name="address">
+                <div class="invalid-feedback" id="txt-address-error"></div>
+            </div>
+            <div class="d-flex gap-2">
+                <button type="button" class="btn btn-success">Save</button>
+                <button type="reset" class="btn btn-warning">Clear</button>
+            </div>
+        </form>
+        <div class="table-container">
+           <div>
+                <input type="text" placeholder="Search here" class="txt-search">
+           </div>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="d-flex justify-content-center">ID</th>
+                        <th>NAME</th>
+                        <th>PERIOD</th>
+                        <th class="d-flex justify-content-center">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody class="userTableBody">
+                    <!-- <tr class="no-data">
+                        <td colspan="4" class="text-center py-5 no-data-found">No Data Found!</td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td>C001</td>
+                        <td>Kasun</td>
+                        <td>Galle</td>
+                        <td>
+                            <i class="bi bi-pencil me-2" title="Edit"></i>
+                            <i class="bi bi-trash" title="Delete"></i>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Supun</td>
+                        <td>Matara</td>
+                        <td>
+                            <i class="bi bi-pencil me-2" title="Edit"></i>
+                            <i class="bi bi-trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Nuwan</td>
+                        <td>Panadura</td>
+                        <td>
+                            <i class="bi bi-pencil me-2" title="Edit"></i>
+                            <i class="bi bi-trash" title="Delete"></i>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+    </div></main>
+    <footer class="text-center border-top p-2">
+        Copyright &copy; 2023 DEP-11. All Rights Reserved.
+    </footer>
+</body>
+</html>
