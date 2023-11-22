@@ -1,0 +1,14 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.js",
+  "scripts": {
+    "start": "parcel --no-cache",
+    "build": "rm -rf dist parcel build"
+  },
+  
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
